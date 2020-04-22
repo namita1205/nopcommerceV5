@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite  name="nopCommerce" parallel="tests" thread-count="3">
+	<listeners>
+		<listener
+			class-name="com.nopcommerce.utilities.ExtentReportManager"></listener>
+	</listeners>
+
+	<test name="chromeTest"> <parameter name="browser" value="chrome" /> 
+		<classes> 
+		
+		 <class name="com.nopcommerce.testCases.TC_LoginTest_001" /> 
+		
+		<!--  <class name="com.nopcommerce.testCases.TC_LoginDDT_002" />  --> -->
+		<!-- <class name="com.nopcommerce.testCases.TC_AddCustomerTest_003" /> -->
+	 	<!--  <class name="com.nopcommerce.testCases.TC_SearchCustomerByEmail_004" /> -->  -->
+		<class name="com.nopcommerce.testCases.TC_SearchCustomerByName_005" />  
+		<!-- <class name="com.nopcommerce.testCases.TC_SearchVendorsByName_006" />  --> --> -->
+		
+		
+		</classes> 
+		</test> 
+
+	<!-- <test name="firefoxTest">
+		<parameter name="browser" value="firefox"></parameter>
+
+		<classes>
+
+			<class name="com.nopcommerce.testCases.TC_LoginTest_001" />
+
+		</classes>
+	</test> -->
+	<!--  <test name="edgeTest"> 
+		<parameter name="browser" value="edge"></parameter> 
+	<classes>
+	 
+
+		<class name="com.nopcommerce.testCases.TC_LoginTest_001" /> 
+		</classes> 
+	</test>  --> 
+</suite>
