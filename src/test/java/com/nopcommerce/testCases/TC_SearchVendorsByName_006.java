@@ -24,10 +24,13 @@ public class TC_SearchVendorsByName_006 extends BaseClass{
 		SearchVendorsPage vendors=new SearchVendorsPage(driver);
 		vendors.clickVendors();
 		Thread.sleep(5000);
+		
+		logger.info("***********Providing Vendors Name***********");
 		vendors.setVendorsName("Vendor 1");
 		vendors.clickSearch();
 		vendors.searchByName("Vendor 1");
 		//Assert.assertEquals(vendors.searchByName("Vendor 1"), true);
+		logger.info("************Validating Search Vendors by Name************");
 		Assert.assertTrue(vendors.searchByName("Vendor 1"));
 	}
 	

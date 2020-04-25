@@ -376,3 +376,10 @@
 [INFO ] 2020-04-21 17:55:59.218 [TestNG-tests-1] TC_LoginTest_001 - **********Login validation starting*********
 [INFO ] 2020-04-21 17:55:59.218 [TestNG-tests-1] TC_LoginTest_001 - **********Login Test passed**********
 [INFO ] 2020-04-21 17:56:02.744 [TestNG-tests-1] TC_SearchCustomerByName_005 - ********Providing login details to application********
+[INFO ] 2020-04-25 00:06:59.891 [TestNG-tests-1] TC_ExportCustomers_007 - ***********Providing Email**************
+[INFO ] 2020-04-25 00:07:00.038 [TestNG-tests-1] TC_ExportCustomers_007 - ************Clicking on ExportSelected**********
+[INFO ] 2020-04-25 00:07:14.922 [TestNG-tests-1] TC_ExportCustomers_007 - *************Validating File Exists***************
+[INFO ] 2020-04-25 00:07:14.922 [TestNG-tests-1] TC_ExportCustomers_007 - File successfully downloaded
+[INFO ] 2020-04-25 00:07:26.136 [TestNG-tests-1] TC_ExportCustomers_007 - **************Validating downloaded table values**********
+[INFO ] 2020-04-25 00:07:31.137 [TestNG-tests-1] TC_ExportCustomers_007 - ***************Validating file deleted**************
+[INFO ] 2020-04-25 00:07:31.137 [TestNG-tests-1] TC_ExportCustomers_007 - File Deleted

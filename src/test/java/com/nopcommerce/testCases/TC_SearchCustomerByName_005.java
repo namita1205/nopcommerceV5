@@ -13,7 +13,7 @@ import com.nopcommerce.testBase.BaseClass;
 public class TC_SearchCustomerByName_005 extends BaseClass {
 	
 	@Test
-	public void searchCustomerbyEmail() throws IOException, InterruptedException {
+	public void searchCustomerbyName() throws IOException, InterruptedException {
 
 		driver.get(configPropObj.getProperty("baseURL"));
 
@@ -28,14 +28,15 @@ public class TC_SearchCustomerByName_005 extends BaseClass {
 		AddcustomerPage addcust = new AddcustomerPage(driver);
 		addcust.clickOnCustomersMenu();
 		addcust.clickOnCustomersMenuItem();
-		//Provide Email in Search Page
-		
+	
+		logger.info("***********Providing First and Last Name of Customer*********");
 		SearchCustomerPage searchcust=new SearchCustomerPage(driver);
 		searchcust.setFirstName("Victoria");
 		searchcust.setLastName("Terces");
 		searchcust.clickSearch();
 		Thread.sleep(5000);
 		boolean status=searchcust.searchCustomerByName("Victoria Terces");
+		logger.info("************Validating Search Customer by Name **************");
 		Assert.assertEquals(true, status);
 		
 		

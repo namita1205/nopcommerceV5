@@ -50,11 +50,11 @@ public class TC_AddCustomerTest_003 extends BaseClass {
 		addcust.clickOnSave();
 		// Validation
 		if (addcust.verifyConfirmationMsg()) {
-			logger.info("***************  Customer added succesfully *********** ");
+			logger.info("***************  Customer added successfully *********** ");
 			Assert.assertTrue(true);
 		}
 		else {
-			logger.error("*************** Customer Not added succesfully *********** ");
+			logger.error("*************** Customer Not added successfully *********** ");
 			Assert.assertTrue(false);
 		}
 

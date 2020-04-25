@@ -9,15 +9,15 @@
 
 	<test name="chromeTest"> <parameter name="browser" value="chrome" /> 
 		<classes> 
+		<!-- 
+		  <class name="com.nopcommerce.testCases.TC_LoginTest_001" /> 
 		
-		 <class name="com.nopcommerce.testCases.TC_LoginTest_001" /> 
-		
-		<!--  <class name="com.nopcommerce.testCases.TC_LoginDDT_002" />  --> -->
-		<!-- <class name="com.nopcommerce.testCases.TC_AddCustomerTest_003" /> -->
-	 	<!--  <class name="com.nopcommerce.testCases.TC_SearchCustomerByEmail_004" /> -->  -->
+		 <class name="com.nopcommerce.testCases.TC_LoginDDT_002" />  -->
+		<!-- <class name="com.nopcommerce.testCases.TC_AddCustomerTest_003" />
+	 	 <class name="com.nopcommerce.testCases.TC_SearchCustomerByEmail_004" />  
 		<class name="com.nopcommerce.testCases.TC_SearchCustomerByName_005" />  
-		<!-- <class name="com.nopcommerce.testCases.TC_SearchVendorsByName_006" />  --> --> -->
-		
+		<class name="com.nopcommerce.testCases.TC_SearchVendorsByName_006" />  -->  -->
+		<class name="com.nopcommerce.testCases.TC_ExportCustomers_007"/>
 		
 		</classes> 
 		</test> 

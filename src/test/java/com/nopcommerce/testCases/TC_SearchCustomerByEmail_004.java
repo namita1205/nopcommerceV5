@@ -28,13 +28,17 @@ public class TC_SearchCustomerByEmail_004 extends BaseClass {
 		AddcustomerPage addcust = new AddcustomerPage(driver);
 		addcust.clickOnCustomersMenu();
 		addcust.clickOnCustomersMenuItem();
-		//Provide Email in Search Page
+		logger.info("************Providing Email of Customer***********");
 		
 		SearchCustomerPage searchcust=new SearchCustomerPage(driver);
 		searchcust.setEmail("victoria_victoria@nopCommerce.com");
 		searchcust.clickSearch();
+		
+		
 		boolean status=searchcust.searchCustomerByEmail("victoria_victoria@nopCommerce.com");
+		logger.info("*************Validating Search Customer by Email **************");
 		Assert.assertEquals(true, status);
+		
 		
 		
 	}
